@@ -9,14 +9,29 @@
 /* Begin PBXBuildFile section */
 		EB1D32932D03397B005AF12D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1D32922D03397B005AF12D /* AppDelegate.swift */; };
 		EB1D32952D03397B005AF12D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1D32942D03397B005AF12D /* SceneDelegate.swift */; };
-		EB1D32972D03397B005AF12D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1D32962D03397B005AF12D /* ViewController.swift */; };
-		EB1D329A2D03397B005AF12D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EB1D32992D03397B005AF12D /* Base */; };
 		EB1D329D2D03397B005AF12D /* SwiftVIPER.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB1D329B2D03397B005AF12D /* SwiftVIPER.xcdatamodeld */; };
 		EB1D329F2D03397C005AF12D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB1D329E2D03397C005AF12D /* Assets.xcassets */; };
 		EB1D32A22D03397C005AF12D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EB1D32A12D03397C005AF12D /* Base */; };
 		EB1D32AD2D03397C005AF12D /* SwiftVIPERTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1D32AC2D03397C005AF12D /* SwiftVIPERTests.swift */; };
 		EB1D32B72D03397C005AF12D /* SwiftVIPERUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1D32B62D03397C005AF12D /* SwiftVIPERUITests.swift */; };
 		EB1D32B92D03397C005AF12D /* SwiftVIPERUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1D32B82D03397C005AF12D /* SwiftVIPERUITestsLaunchTests.swift */; };
+		EB9387362D06D9F000C077AF /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9387352D06D9F000C077AF /* APIManager.swift */; };
+		EB9387382D06DA0000C077AF /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9387372D06DA0000C077AF /* NetworkError.swift */; };
+		EB93873A2D06DA1900C077AF /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9387392D06DA1900C077AF /* StringExtensions.swift */; };
+		EB93873C2D06DA5300C077AF /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93873B2D06DA5300C077AF /* Utilities.swift */; };
+		EB93873E2D06DB0100C077AF /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93873D2D06DB0100C077AF /* LoginProtocols.swift */; };
+		EB9387402D06DB1C00C077AF /* LoginEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93873F2D06DB1C00C077AF /* LoginEntity.swift */; };
+		EB9387422D06DB2700C077AF /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9387412D06DB2700C077AF /* LoginRouter.swift */; };
+		EB9387442D06DB3600C077AF /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9387432D06DB3600C077AF /* LoginPresenter.swift */; };
+		EB9387462D06DB4900C077AF /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9387452D06DB4900C077AF /* LoginInteractor.swift */; };
+		EB9387482D06DB6100C077AF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9387472D06DB6100C077AF /* LoginView.swift */; };
+		EB9387C42D06FF4400C077AF /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9387C32D06FF4400C077AF /* APIConstants.swift */; };
+		EB9387CD2D0705F500C077AF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9387CC2D0705F500C077AF /* HomeView.swift */; };
+		EB9387CF2D07060400C077AF /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9387CE2D07060400C077AF /* HomeProtocols.swift */; };
+		EB9387D12D07061200C077AF /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9387D02D07061200C077AF /* Crypto.swift */; };
+		EB9387D32D07107300C077AF /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9387D22D07107300C077AF /* HomeRouter.swift */; };
+		EB9387D52D07108900C077AF /* HomeIntrector.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9387D42D07108900C077AF /* HomeIntrector.swift */; };
+		EB9387D72D07109400C077AF /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9387D62D07109400C077AF /* HomePresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +55,6 @@
 		EB1D328F2D03397B005AF12D /* SwiftVIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftVIPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB1D32922D03397B005AF12D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB1D32942D03397B005AF12D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EB1D32962D03397B005AF12D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EB1D32992D03397B005AF12D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB1D329C2D03397B005AF12D /* SwiftVIPER.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftVIPER.xcdatamodel; sourceTree = "<group>"; };
 		EB1D329E2D03397C005AF12D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB1D32A12D03397C005AF12D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +64,23 @@
 		EB1D32B22D03397C005AF12D /* SwiftVIPERUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftVIPERUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB1D32B62D03397C005AF12D /* SwiftVIPERUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftVIPERUITests.swift; sourceTree = "<group>"; };
 		EB1D32B82D03397C005AF12D /* SwiftVIPERUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftVIPERUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EB9387352D06D9F000C077AF /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		EB9387372D06DA0000C077AF /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		EB9387392D06DA1900C077AF /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		EB93873B2D06DA5300C077AF /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		EB93873D2D06DB0100C077AF /* LoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
+		EB93873F2D06DB1C00C077AF /* LoginEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEntity.swift; sourceTree = "<group>"; };
+		EB9387412D06DB2700C077AF /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		EB9387432D06DB3600C077AF /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		EB9387452D06DB4900C077AF /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		EB9387472D06DB6100C077AF /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		EB9387C32D06FF4400C077AF /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		EB9387CC2D0705F500C077AF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EB9387CE2D07060400C077AF /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
+		EB9387D02D07061200C077AF /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		EB9387D22D07107300C077AF /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		EB9387D42D07108900C077AF /* HomeIntrector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeIntrector.swift; sourceTree = "<group>"; };
+		EB9387D62D07109400C077AF /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +131,12 @@
 		EB1D32912D03397B005AF12D /* SwiftVIPER */ = {
 			isa = PBXGroup;
 			children = (
-				EB1D32922D03397B005AF12D /* AppDelegate.swift */,
-				EB1D32942D03397B005AF12D /* SceneDelegate.swift */,
-				EB1D32962D03397B005AF12D /* ViewController.swift */,
-				EB1D32982D03397B005AF12D /* Main.storyboard */,
-				EB1D329E2D03397C005AF12D /* Assets.xcassets */,
-				EB1D32A02D03397C005AF12D /* LaunchScreen.storyboard */,
+				EB93872D2D06D8FA00C077AF /* Network */,
+				EB93872C2D06D8F300C077AF /* Extansions */,
+				EB93872B2D06D8E900C077AF /* Resources */,
+				EB93872A2D06D8E300C077AF /* Common */,
+				EB9387292D06D8DB00C077AF /* Modules */,
+				EB9387282D06D8CE00C077AF /* App */,
 				EB1D32A32D03397C005AF12D /* Info.plist */,
 				EB1D329B2D03397B005AF12D /* SwiftVIPER.xcdatamodeld */,
 			);
@@ -128,6 +158,181 @@
 				EB1D32B82D03397C005AF12D /* SwiftVIPERUITestsLaunchTests.swift */,
 			);
 			path = SwiftVIPERUITests;
+			sourceTree = "<group>";
+		};
+		EB9387282D06D8CE00C077AF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EB1D32922D03397B005AF12D /* AppDelegate.swift */,
+				EB1D32942D03397B005AF12D /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		EB9387292D06D8DB00C077AF /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				EB9387C52D07059300C077AF /* Home */,
+				EB93872E2D06D95F00C077AF /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		EB93872A2D06D8E300C077AF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EB93873B2D06DA5300C077AF /* Utilities.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		EB93872B2D06D8E900C077AF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EB1D329E2D03397C005AF12D /* Assets.xcassets */,
+				EB1D32A02D03397C005AF12D /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EB93872C2D06D8F300C077AF /* Extansions */ = {
+			isa = PBXGroup;
+			children = (
+				EB9387392D06DA1900C077AF /* StringExtensions.swift */,
+			);
+			path = Extansions;
+			sourceTree = "<group>";
+		};
+		EB93872D2D06D8FA00C077AF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EB9387352D06D9F000C077AF /* APIManager.swift */,
+				EB9387372D06DA0000C077AF /* NetworkError.swift */,
+				EB9387C32D06FF4400C077AF /* APIConstants.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EB93872E2D06D95F00C077AF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EB9387342D06D9AB00C077AF /* Contracts */,
+				EB9387332D06D9A400C077AF /* Entity */,
+				EB9387322D06D99E00C077AF /* Router */,
+				EB9387312D06D99600C077AF /* Presenter */,
+				EB9387302D06D98B00C077AF /* Interactor */,
+				EB93872F2D06D98200C077AF /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		EB93872F2D06D98200C077AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB9387472D06DB6100C077AF /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB9387302D06D98B00C077AF /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				EB9387452D06DB4900C077AF /* LoginInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		EB9387312D06D99600C077AF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EB9387432D06DB3600C077AF /* LoginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		EB9387322D06D99E00C077AF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				EB9387412D06DB2700C077AF /* LoginRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		EB9387332D06D9A400C077AF /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				EB93873F2D06DB1C00C077AF /* LoginEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		EB9387342D06D9AB00C077AF /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				EB93873D2D06DB0100C077AF /* LoginProtocols.swift */,
+			);
+			path = Contracts;
+			sourceTree = "<group>";
+		};
+		EB9387C52D07059300C077AF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EB9387CB2D0705E400C077AF /* View */,
+				EB9387CA2D0705DD00C077AF /* Intrector */,
+				EB9387C92D0705D400C077AF /* Presenter */,
+				EB9387C82D0705CF00C077AF /* Router */,
+				EB9387C72D0705C800C077AF /* Entity */,
+				EB9387C62D0705B500C077AF /* Contracts */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EB9387C62D0705B500C077AF /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				EB9387CE2D07060400C077AF /* HomeProtocols.swift */,
+			);
+			path = Contracts;
+			sourceTree = "<group>";
+		};
+		EB9387C72D0705C800C077AF /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				EB9387D02D07061200C077AF /* Crypto.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		EB9387C82D0705CF00C077AF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				EB9387D22D07107300C077AF /* HomeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		EB9387C92D0705D400C077AF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EB9387D62D07109400C077AF /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		EB9387CA2D0705DD00C077AF /* Intrector */ = {
+			isa = PBXGroup;
+			children = (
+				EB9387D42D07108900C077AF /* HomeIntrector.swift */,
+			);
+			path = Intrector;
+			sourceTree = "<group>";
+		};
+		EB9387CB2D0705E400C077AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB9387CC2D0705F500C077AF /* HomeView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +441,6 @@
 			files = (
 				EB1D329F2D03397C005AF12D /* Assets.xcassets in Resources */,
 				EB1D32A22D03397C005AF12D /* Base in Resources */,
-				EB1D329A2D03397B005AF12D /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,9 +465,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB1D32972D03397B005AF12D /* ViewController.swift in Sources */,
+				EB9387482D06DB6100C077AF /* LoginView.swift in Sources */,
+				EB9387442D06DB3600C077AF /* LoginPresenter.swift in Sources */,
+				EB9387402D06DB1C00C077AF /* LoginEntity.swift in Sources */,
+				EB9387D72D07109400C077AF /* HomePresenter.swift in Sources */,
+				EB9387CD2D0705F500C077AF /* HomeView.swift in Sources */,
+				EB9387D12D07061200C077AF /* Crypto.swift in Sources */,
+				EB93873E2D06DB0100C077AF /* LoginProtocols.swift in Sources */,
 				EB1D32932D03397B005AF12D /* AppDelegate.swift in Sources */,
+				EB9387D32D07107300C077AF /* HomeRouter.swift in Sources */,
+				EB9387362D06D9F000C077AF /* APIManager.swift in Sources */,
+				EB9387D52D07108900C077AF /* HomeIntrector.swift in Sources */,
+				EB93873A2D06DA1900C077AF /* StringExtensions.swift in Sources */,
+				EB9387382D06DA0000C077AF /* NetworkError.swift in Sources */,
+				EB9387C42D06FF4400C077AF /* APIConstants.swift in Sources */,
 				EB1D329D2D03397B005AF12D /* SwiftVIPER.xcdatamodeld in Sources */,
+				EB9387422D06DB2700C077AF /* LoginRouter.swift in Sources */,
+				EB9387CF2D07060400C077AF /* HomeProtocols.swift in Sources */,
+				EB9387462D06DB4900C077AF /* LoginInteractor.swift in Sources */,
+				EB93873C2D06DA5300C077AF /* Utilities.swift in Sources */,
 				EB1D32952D03397B005AF12D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,14 +521,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EB1D32982D03397B005AF12D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EB1D32992D03397B005AF12D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EB1D32A02D03397C005AF12D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -451,7 +663,6 @@
 				INFOPLIST_FILE = SwiftVIPER/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -479,7 +690,6 @@
 				INFOPLIST_FILE = SwiftVIPER/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

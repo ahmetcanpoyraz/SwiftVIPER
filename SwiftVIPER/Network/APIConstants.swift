@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct APIConstants {
+    static let baseURL = "https://raw.githubusercontent.com/atilsamancioglu/K21-JSONDataSet/refs/heads/master/crypto.json"
+}
